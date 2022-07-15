@@ -1,0 +1,94 @@
+.card {
+  background-color: #283142;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #676FFF;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  max-width: 350px;
+}
+
+.form-control {
+  height: 46px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #9AAABE;
+  padding: 0 16px;
+  background-color: #1B2531;
+  border: 1px solid #384459;
+  border-radius: 5px;
+}
+
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content-table thead {
+  height: 55px;
+  font-size: 16px;
+  color: #E9E9E9;
+}
+
+.content-table tbody {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #CFCFCF;
+}
+
+.content-table tbody tr {
+  height: 74px;
+  border-top: 1px solid #5F6E82;
+}
+
+.content-table tbody tr:nth-child(odd) {
+  background-color: #1B2531;
+}
+
+.content-table tbody tr:hover {
+  background-color: #384459;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive */
+.show576, .show992 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .show576 {
+    display: table-cell;
+  }
+
+  .card {
+    padding: 35px;
+  }
+
+  .content-table tbody {
+    font-size: 18px;
+  }
+
+  .content-table tbody tr {
+    height: 55px;
+  }
+}
+
+@media (min-width: 992px) {
+  .show992 {
+    display: table-cell;
+  }
+}

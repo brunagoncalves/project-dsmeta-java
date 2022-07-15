@@ -1,6 +1,18 @@
+import {Header} from "./components/Header";
+import {SalesCard} from "./components/SalesCard";
+
 export function App() {
 
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Header/>
+      <main>
+        <section id="sales">
+          <div className="container">
+            <SalesCard/>
+          </div>
+        </section>
+      </main>
+    </>
   )
 }
