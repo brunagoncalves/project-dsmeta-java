@@ -2,11 +2,11 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import {BASE_URL} from "../../utils/request";
+import {Sale} from "../../models/sales";
 
 import {NotificationButton} from "../NotificationButton";
 import "./styles.css";
-import {BASE_URL} from "../../utils/request";
-import {Sale} from "../../models/sales";
 
 export function SalesCard() {
   const min = new Date(new Date().setDate(new Date().getDate() - 365));
@@ -73,7 +73,7 @@ export function SalesCard() {
                 <td>R$ {sale.amount.toFixed(2)}</td>
                 <td>
                   <div className="btn-container">
-                    <NotificationButton/>
+                    <NotificationButton saleId={sale.id}/>
                   </div>
                 </td>
               </tr>
