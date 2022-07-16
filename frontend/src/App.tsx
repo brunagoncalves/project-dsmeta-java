@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header";
 import SalesCard from "./components/SalesCard";
 
-export default function App() {
+function App() {
 
   return (
     <>
@@ -20,3 +20,5 @@ export default function App() {
     </>
   )
 }
+
+export default App;

@@ -15,10 +15,12 @@ function handleClickSendSms(id: number) {
   })
 }
 
-export default function NotificationButton({saleId}: Props) {
+function NotificationButton({saleId}: Props) {
   return (
     <div className="content-button" onClick={() => handleClickSendSms(saleId)}>
       <img src={icon} alt="Icon Notification"/>
     </div>
   )
 }
+
+export default NotificationButton;

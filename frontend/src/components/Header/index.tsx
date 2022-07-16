@@ -1,7 +1,7 @@
 import logo from '../../assets/logo.svg';
 import "./styles.css";
 
-export default function Header() {
+function Header() {
   return (
     <header>
       <div className="content-header">
@@ -12,3 +12,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header;
