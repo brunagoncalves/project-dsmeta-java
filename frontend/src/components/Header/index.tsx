@@ -1,7 +1,7 @@
 import logo from '../../assets/logo.svg';
 import "./styles.css";
 
-export function Header() {
+export default function Header() {
   return (
     <header>
       <div className="content-header">

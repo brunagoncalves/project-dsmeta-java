@@ -5,10 +5,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import {BASE_URL} from "../../utils/request";
 import {Sale} from "../../models/sales";
 
-import {NotificationButton} from "../NotificationButton";
+import NotificationButton from "../NotificationButton";
 import "./styles.css";
 
-export function SalesCard() {
+export default function SalesCard() {
   const min = new Date(new Date().setDate(new Date().getDate() - 365));
   const max = new Date();
 
